@@ -19,14 +19,23 @@ const hero = () => {
         <CustomButton
 
         title="Buy Now"
-        containerStyles="bg-primary-blue"
+        containerStyles="bg-primary-blue text-white rounded-full mt-10"
         
         handleClick = {handleScroll}
         />
         </div>
+        <div className='hero__image-container'>
+          <div className='hero__image'>
+            <Image src="/coffee1.png" alt="hero" fill className="object-contain"/>
+            <div className='hero__image-overlay bg-hero-bg'>
+              
+            </div>
+          </div>
 
+        </div>
 
     </div>
+
   )
 }
 
