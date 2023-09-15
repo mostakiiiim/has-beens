@@ -7,49 +7,49 @@ const footer = () => {
     <footer className='flex flex-col text-black-100 mt-5 border-t  border-gray-100'>
       <div className='flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10'>
         <div className='flex flex-col justify-start items-start gap-6'>
-            <Image src='/logo.png' alt='logo' width={50} height={18} className='object-contain'/>
-            <p className='text-base text-gray-700'>
-              Coffee has beans <br/>
-              All rights reserved &copy;
-            </p>
+          <Image src='/logo.png' alt='logo' width={50} height={18} className='object-contain' />
+          <p className='text-base text-gray-700'>
+            Coffee has beans <br />
+            All rights reserved &copy;
+          </p>
         </div>
         <div className='footer__links'>
-          {footerLinks.map((link)=>
+          {footerLinks.map((link) =>
           (
             <div key={link.title} className='footer__link'>
               <h3 className='font-bold'>
-              {link.title}
+                {link.title}
               </h3>
-              {link.links.map((item)=>(
+              {link.links.map((item) => (
                 <Link key={item.title}
-                 href={item.url}
-                 className='text-gray-700 text-sm block hover:text-primary-blue' >
+                  href={item.url}
+                  className='text-gray-700 text-sm block hover:text-primary-blue' >
                   {item.title}
-                  </Link>
-                    
-                  
+                </Link>
+
+
               ))}
-              
+
 
             </div>
           )
-          
-          
+
+
           )}
         </div>
 
 
         <div className='flex justify-between item-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10'>
-                <div className='footer__copyrights-link'>
-                <Link href='/' className='text-gray-700'>
-                  Privacy Policy
+          <div className='footer__copyrights-link'>
+            <Link href='/' className='text-gray-700'>
+              Privacy Policy
 
-                </Link>
+            </Link>
 
-                <Link href='/' className='text-gray-700'>
-                  Terms of use
-                  </Link>
-                </div>
+            <Link href='/' className='text-gray-700'>
+              Terms of use
+            </Link>
+          </div>
         </div>
       </div>
 
